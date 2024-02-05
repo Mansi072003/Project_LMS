@@ -4,4 +4,4 @@ import cors from "cors";
 import cookieParser from "cookie-parser";
 
 //body parser
-app.use(express.json({limit: "50mb"}));//importantfor cloudinary
+app.use(express.json({limit: "50mb"}));//important for cloudinary
