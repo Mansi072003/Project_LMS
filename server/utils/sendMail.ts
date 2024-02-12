@@ -16,7 +16,7 @@ const sendMail = async (options: EmailOptions):Promise<void> => {
         port:parseInt(process.env.SMTP_PORT||'587'),
         service: process.env.SMTP_SERVICE,
         auth: {
-            user: process.env.SMTP_EMAIL,
+            user: process.env.SMTP_MAIL,
             pass: process.env.SMTP_PASSWORD,
         },
     });
@@ -35,7 +35,7 @@ const sendMail = async (options: EmailOptions):Promise<void> => {
         from: process.env.SMTP_EMAIL,
         to: email,
         subject,
-        html,
+        html
     };
 
     await transporter.sendMail(mailOptions);

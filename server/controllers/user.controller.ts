@@ -16,7 +16,7 @@ interface IRegistrationBody{
     password:string;
     avatar?:string;
 }
-export const registerUser= CatchAsyncError(async(req:Request,res:Response,next:NextFunction)=>{
+export const registrationUser= CatchAsyncError(async(req:Request,res:Response,next:NextFunction)=>{
    try{
     const {name,email,password}=req.body;
     const isEmailExist=await userModel.findOne({email});
@@ -44,13 +44,12 @@ export const registerUser= CatchAsyncError(async(req:Request,res:Response,next:N
             template:"activation-mail.ejs",
             data,
         });
-        res.status(200).json({
+        res.status(201).json({
             success:true,
-            message: `Please check your email :${user.email} to activate your account`,
+            message: `Please check your email :${user.email} to activate your account!`,
             activationToken:activationToken.token,
         });
-    }
-    catch(error:any){
+    }catch(error:any){
         return next(new ErrorHandler(error.message,400));
     
     }
