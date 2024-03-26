@@ -3,8 +3,9 @@ import React,{FC,useState} from 'react';
 import Heading from './utils/Heading';
 
 import Header from './components/Header';
-import Login from './components/Auth/Login';
-import SignUp from './components/Auth/SignUp';
+import Hero from './components/Route/Hero';
+// import Login from './components/Auth/Login';
+// import SignUp from './components/Auth/SignUp';
 import {useRouter} from 'next/router';
 interface Props {
 }
@@ -23,13 +24,14 @@ const Page : FC<Props> = (props) => {
        setRoute={setRoute}
        route={route}
        />
+       <Hero />
     </div>
   
-    show login page
-    <div>
-      <Login setRoute={setRoute}/>
+    // show login page
+    // <div>
+    //   <Login setRoute={setRoute}/>
       
-    </div>
+    // </div>
     
   );
 }
