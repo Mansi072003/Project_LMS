@@ -20,10 +20,10 @@ return (
     Improve Your Online Learning Experience Better Instantly
     </h2>
     <br />
-<p className="dark;text-[#edfff4] ☐ text-[#000000ac] font-Josefin font-[600] text-[18px] 1500px:!w-[55%] 1100px:!w-[78%]">
-We have 40k+ Online courses & 500K+ Online registered student. Find
-your desired Courses from them.
-</p>
-<br/>
-<br/>
-<div className="1500px:w-[55%] 1100px:w-[78%] w-[90%] h-[50px) bg-transparent relative">
+    <p className="dark;text-[#edfff4] ☐ text-[#000000ac] font-Josefin font-[600] text-[18px] 1500px:!w-[55%] 1100px:!w-[78%]">
+    We have 40k+ Online courses & 500K+ Online registered student. Find
+    your desired Courses from them.
+    </p>
+    <br/>
+    <br/>
+    <div className="1500px:w-[55%] 1100px:w-[78%] w-[90%] h-[50px) bg-transparent relative">
