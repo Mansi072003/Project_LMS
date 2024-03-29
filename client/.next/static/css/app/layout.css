@@ -713,8 +713,17 @@ video {
 .top-0 {
   top: 0px;
 }
+.top-\[100px\] {
+  top: 100px;
+}
 .top-\[50\%\] {
   top: 50%;
+}
+.z-10 {
+  z-index: 10;
+}
+.z-\[10\] {
+  z-index: 10;
 }
 .z-\[80\] {
   z-index: 80;
@@ -738,11 +747,17 @@ video {
 .ml-2 {
   margin-left: 0.5rem;
 }
+.ml-\[-20px\] {
+  margin-left: -20px;
+}
 .mt-5 {
   margin-top: 1.25rem;
 }
 .mt-\[10px\] {
   margin-top: 10px;
+}
+.mt-\[150px\] {
+  margin-top: 150px;
 }
 .block {
   display: block;
@@ -756,8 +771,17 @@ video {
 .h-\[40px\] {
   height: 40px;
 }
+.h-\[50px\] {
+  height: 50px;
+}
+.h-\[50vh\] {
+  height: 50vh;
+}
 .h-\[80px\] {
   height: 80px;
+}
+.h-\[auto\] {
+  height: auto;
 }
 .h-full {
   height: 100%;
@@ -768,14 +792,26 @@ video {
 .w-\[450px\] {
   width: 450px;
 }
+.w-\[50vh\] {
+  width: 50vh;
+}
+.w-\[58px\] {
+  width: 58px;
+}
 .w-\[70\%\] {
   width: 70%;
+}
+.w-\[90\%\] {
+  width: 90%;
 }
 .w-\[95\%\] {
   width: 95%;
 }
 .w-full {
   width: 100%;
+}
+.max-w-\[90\%\] {
+  max-width: 90%;
 }
 .-translate-x-1\/2 {
   --tw-translate-x: -50%;
@@ -788,8 +824,14 @@ video {
 .cursor-pointer {
   cursor: pointer;
 }
+.flex-col {
+  flex-direction: column;
+}
 .items-center {
   align-items: center;
+}
+.justify-end {
+  justify-content: flex-end;
 }
 .justify-center {
   justify-content: center;
@@ -800,8 +842,18 @@ video {
 .rounded {
   border-radius: 0.25rem;
 }
+.rounded-\[5px\] {
+  border-radius: 5px;
+}
 .rounded-\[8px\] {
   border-radius: 8px;
+}
+.rounded-full {
+  border-radius: 9999px;
+}
+.rounded-r-\[5px\] {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 .border {
   border-width: 1px;
@@ -834,6 +886,13 @@ video {
 .bg-no-repeat {
   background-repeat: no-repeat;
 }
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.p-2 {
+  padding: 0.5rem;
+}
 .p-3 {
   padding: 0.75rem;
 }
@@ -843,6 +902,10 @@ video {
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 .px-6 {
   padding-left: 1.5rem;
@@ -863,17 +926,20 @@ video {
 .pl-1 {
   padding-left: 0.25rem;
 }
+.pl-5 {
+  padding-left: 1.25rem;
+}
 .pt-2 {
   padding-top: 0.5rem;
 }
 .pt-4 {
   padding-top: 1rem;
 }
-.pl-5 {
-  padding-left: 1.25rem;
-}
 .text-center {
   text-align: center;
+}
+.font-Josefin {
+  font-family: var(--font-Josefin);
 }
 .font-Poppins {
   font-family: var(--font-Poppins);
@@ -887,14 +953,35 @@ video {
 .text-\[18px\] {
   font-size: 18px;
 }
+.text-\[20px\] {
+  font-size: 20px;
+}
 .text-\[25px\] {
   font-size: 25px;
+}
+.text-\[38px\] {
+  font-size: 38px;
 }
 .font-\[400\] {
   font-weight: 400;
 }
 .font-\[500\] {
   font-weight: 500;
+}
+.font-\[600\] {
+  font-weight: 600;
+}
+.text-\[\#0000004e\] {
+  color: #0000004e;
+}
+.text-\[\#00000063\] {
+  color: #00000063;
+}
+.text-\[\#000000ac\] {
+  color: #000000ac;
+}
+.text-\[\#000000c7\] {
+  color: #000000c7;
 }
 .text-\[\#2190ff\] {
   --tw-text-opacity: 1;
@@ -993,8 +1080,17 @@ body {
   }
 } */
 
+:is(.dark .dark\:border-none) {
+  border-style: none;
+}
+
 :is(.dark .dark\:border-\[\#ffffff1c\]) {
   border-color: #ffffff1c;
+}
+
+:is(.dark .dark\:bg-\[\#575757\]) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(87 87 87 / var(--tw-bg-opacity));
 }
 
 :is(.dark .dark\:bg-\[unset\]) {
@@ -1033,6 +1129,20 @@ body {
   color: rgb(55 163 154 / var(--tw-text-opacity));
 }
 
+:is(.dark .dark\:text-\[\#46e256\]) {
+  --tw-text-opacity: 1;
+  color: rgb(70 226 86 / var(--tw-text-opacity));
+}
+
+:is(.dark .dark\:text-\[\#edfff4\]) {
+  --tw-text-opacity: 1;
+  color: rgb(237 255 244 / var(--tw-text-opacity));
+}
+
+:is(.dark .dark\:text-\[\#ffffffe6\]) {
+  color: #ffffffe6;
+}
+
 :is(.dark .dark\:text-white) {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1042,5 +1152,13 @@ body {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+:is(.dark .dark\:placeholder\:text-\[\#ffffffdd\])::-moz-placeholder {
+  color: #ffffffdd;
+}
+
+:is(.dark .dark\:placeholder\:text-\[\#ffffffdd\])::placeholder {
+  color: #ffffffdd;
 }
 
