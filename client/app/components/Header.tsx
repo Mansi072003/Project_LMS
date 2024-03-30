@@ -97,7 +97,7 @@ const Header: FC<Props> = ({ activeItem, setOpen, route, open, setRoute }) => {
         )
       }
       </div>
-      {/* {route === "Login" && (
+      {route === "Login" && (
         <>
           {open && (
             <CustomModal
@@ -109,7 +109,9 @@ const Header: FC<Props> = ({ activeItem, setOpen, route, open, setRoute }) => {
             />
           )}
         </>
-      )} */}
+      )}
+
+      
     </div>
   );
 };

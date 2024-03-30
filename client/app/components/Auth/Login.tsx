@@ -91,21 +91,22 @@ const Login: FC<Props> = ({ setRoute }) => {
           <input
             type="submit"
             value="Login"
-            className="w-full bg-[#37a39a] text-white font-Poppins font-[500] h-[40px] rounded cursor-pointer"
+            className={`${styles.button}`}
           />
         </div>
         <br />
-        <h5 className="text-center pt-4 font-Poppins text-[14px]">
-          <div className="flex items-center justify-center">
-            <FcGoogle size={20} className="cursor-pointer ml`" />
-            <AiFillGithub size={20} className="cursor-pointer ml-2" />
+        <h5 className="text-center pt-4 font-Poppins text-[14px] text-black dark:text-white">
+          Or Join With 
+          <div className="flex items-center justify-center my-3">
+            <FcGoogle size={30} className="cursor-pointer mr-2" />
+            <AiFillGithub size={30} className="cursor-pointer ml-2" />
           </div>
         </h5>
-        <h5 className="text-center pt-4 font-Poppins text-[14px">
+        <h5 className="text-center pt-4 font-Poppins text-[14px]">
           Not have any account?{" "}
           <span
             className="text-[#2190ff] pl-1 cursor-pointer"
-            onClick={() => setRoute("sign-up")}
+            onClick={() => setRoute("Sign-Up")}
           >
             Sign Up
           </span>

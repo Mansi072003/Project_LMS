@@ -44,8 +44,8 @@ body {
     opacity: 0.4;
   }
 }
-
-/* @layer utilities {
+/* 
+@layer utilities {
   .text-balance {
     text-wrap: balance;
   }
