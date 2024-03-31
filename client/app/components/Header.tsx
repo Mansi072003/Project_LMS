@@ -6,7 +6,8 @@ import { ThemeSwitcher } from "../utils/ThemeSwitcher";
 import CustomModal from "../utils/CustomModal";
 import Login from "../components/Auth/Login";
 import { HiOutlineMenuAlt3, HiOutlineUserCircle } from "react-icons/hi";
-import { set } from "mongoose";
+// import { set } from "mongoose";
+import SignUp from "../components/Auth/SignUp";
 
 type Props = {
   open: boolean;
@@ -109,8 +110,23 @@ const Header: FC<Props> = ({ activeItem, setOpen, route, open, setRoute }) => {
             />
           )}
         </>
-      )}
-
+      )
+      }
+      {
+        route === "Sign-Up" && (
+          <>
+            {open && (
+              <CustomModal
+                open={open}
+                setOpen={setOpen}
+                setRoute={setRoute}
+                activeItem={activeItem}
+                component={SignUp}
+              />
+            )}
+          </>
+        )
+      }
       
     </div>
   );
