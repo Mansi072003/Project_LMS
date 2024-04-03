@@ -21,7 +21,7 @@ body {
   
 }
 .hero_animation{
-  background-image:liner-gradient(147.92deg, hsla(239,76%,53%,0.456)10.41%,hsla(0,0%,100%,0) 89.25%);
+  background-image:linear-gradient(147.92deg, hsla(239,76%,53%,0.456)10.41%,hsla(0,0%,100%,0) 89.25%);
   animation:changeBackground 8s infinite alternate;
 }
 @keyframes changeBackgroundColor{
@@ -31,7 +31,7 @@ body {
   16.67%{
     opacity: 0.9;
   }
-  33.34%{
+  33.33%{
     opacity: 0.8;
   }
   50%{
@@ -44,9 +44,3 @@ body {
     opacity: 0.4;
   }
 }
-/* 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-} */
