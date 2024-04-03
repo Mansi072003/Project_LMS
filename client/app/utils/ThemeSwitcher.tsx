@@ -13,7 +13,7 @@ export const ThemeSwitcher = () => {
                 theme=="light"?(
                     <BiMoon
                     className="cursor-pointer"
-                    fill="white"
+                    fill="black"
                     size={25}
                     onClick={()=>setTheme('dark')}/>
                 ):(<BiSun

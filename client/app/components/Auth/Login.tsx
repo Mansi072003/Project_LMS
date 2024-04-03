@@ -35,10 +35,12 @@ const Login: FC<Props> = ({ setRoute }) => {
   const { errors, touched, values, handleChange, handleSubmit } = formik;
   return (
     <div className="w-full">
-      <h1 className={`${styles.title}`}>Login</h1>
+      <h1 className={`${styles.title}`}>Login with EduTek</h1>
       <form onSubmit={handleSubmit}>
         <div className="w-full mt-5 relative mb-1">
-          <label className={`${styles.label}`} htmlFor="email">Enter your email</label>
+          <label className={`${styles.label}`} htmlFor="email">
+            Enter your email
+          </label>
           <input
             type="email"
             name=""
@@ -88,15 +90,11 @@ const Login: FC<Props> = ({ setRoute }) => {
           )}
         </div>
         <div className="">
-          <input
-            type="submit"
-            value="Login"
-            className={`${styles.button}`}
-          />
+          <input type="submit" value="Login" className={`${styles.button}`} />
         </div>
         <br />
         <h5 className="text-center pt-4 font-Poppins text-[14px] text-black dark:text-white">
-          Or Join With 
+          Or Join With
           <div className="flex items-center justify-center my-3">
             <FcGoogle size={30} className="cursor-pointer mr-2" />
             <AiFillGithub size={30} className="cursor-pointer ml-2" />

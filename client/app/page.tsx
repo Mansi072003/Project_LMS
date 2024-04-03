@@ -7,12 +7,13 @@ import Hero from './components/Route/Hero';
 // import Login from './components/Auth/Login';
 // import SignUp from './components/Auth/SignUp';
 import {useRouter} from 'next/router';
-interface Props {
-}
+interface Props {}
+
 const Page : FC<Props> = (props) => {
   const [open, setOpen] = useState(false);
   const [activeItem, setActiveItem] = useState(0);
   const [route, setRoute] = useState("Login")
+  // const [isMobile, setisMobile] = useState(true);
   return (
     <div>
       <Heading title="Edutek" description="Edutek is a platform for students to learn and get help from teachers."
@@ -23,6 +24,8 @@ const Page : FC<Props> = (props) => {
        activeItem={activeItem}
        setRoute={setRoute}
        route={route}
+      //  isMobile={isMobile}
+
        />
        <Hero />
     </div>

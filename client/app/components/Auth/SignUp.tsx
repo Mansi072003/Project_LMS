@@ -31,7 +31,7 @@ const SignUp: FC<Props> = ({ setRoute }) => {
     },
     validationSchema: schema,
     onSubmit: async ({ email, password }) => {
-      console.log(email, password);
+          setRoute("Verification");
     },
   });
   const { errors, touched, values, handleChange, handleSubmit } = formik;
@@ -39,7 +39,7 @@ const SignUp: FC<Props> = ({ setRoute }) => {
     <div className="w-full">
       <h1 className={`${styles.title}`}>Sign Up</h1>
       <form onSubmit={handleSubmit}>
-        <div className="w-full mt-5 relative mb-1">
+        <div className="mb-3">
           <label className={`${styles.label}`} htmlFor="email">
             Enter your Name
           </label>
@@ -109,14 +109,15 @@ const SignUp: FC<Props> = ({ setRoute }) => {
               onClick={() => setShow(false)}
             />
           )}
-          {errors.password && touched.password && (
+         
+        </div>
+        {errors.password && touched.password && (
             <span className="text-red-500 pt-2 block">{errors.password}</span>
           )}
-        </div>
-        <div className="">
+        <div className="w-full mt-5">
           <input
             type="submit"
-            value="SignUp"
+            value="Sign Up"
             className="w-full bg-[#37a39a] text-white font-Poppins font-[500] h-[40px] rounded cursor-pointer"
           />
         </div>
