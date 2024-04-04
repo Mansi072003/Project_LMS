@@ -39,8 +39,9 @@ const Login: FC<Props> = ({ setRoute }) => {
       <form onSubmit={handleSubmit}>
         <div className="w-full mt-5 relative mb-1">
           <label className={`${styles.label}`} htmlFor="email">
-            Enter your email
+            Enter your Email
           </label>
+          <br></br>
           <input
             type="email"
             name=""

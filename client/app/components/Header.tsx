@@ -25,7 +25,7 @@ const Header: FC<Props> = ({ activeItem, setOpen, route, open, setRoute }) => {
 
   if (typeof window !== "undefined") {
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 85 ) {
+      if (window.scrollY > 85) {
         setActive(true);
       } else {
         setActive(false);
@@ -33,7 +33,7 @@ const Header: FC<Props> = ({ activeItem, setOpen, route, open, setRoute }) => {
     });
   }
 
-  const handleClose = (e:any) => {
+  const handleClose = (e: any) => {
     if (e.target.id === "screen") {
       {
         setOpenSidebar(false);
@@ -45,15 +45,13 @@ const Header: FC<Props> = ({ activeItem, setOpen, route, open, setRoute }) => {
       <div
         className={`${
           active
-            ? "dark:bg-opacity-50 dark:bg-gradient-to-b dark:from-gray-900 dark:to-black fixed top-0 left-0 w-full h-[80px] z-[80] border-b dark:border-[#ffffff1c] shadow-xl transition duration-500"
-            : "w-full border-b dark:border-[#ffffff1c] h-[80px] z-[80] dark:shadow"
+            ? "dark:bg-opacity-50 dark:bg-gradient-to-b dark:from-gray-900 dark:to-black fixed top-0 left-0 w-full h-[80px] z-[80] border-b dark:border-[#ffffff1c] shadow-xl transition duration-500": "w-full border-b dark:border-[#ffffff1c] h-[80px] z-[80] dark:shadow"
         }`}
       >
         <div className="w-[95%] 800px:w-[92%] m-auto py-2 h-full">
           <div className="w-full h-[80px] flex item-center justify-between p-3">
             <div>
-              <Link
-                href={"/"}
+              <Link href={"/"}
                 className={`text-[25px] font-Poppins font-[500] text-black dark:text-white`}
               >
                 EduTek
